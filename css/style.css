@@ -1,0 +1,1226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+/**********************************************************/
+                                    /*TOP HEADER*/ 
+/**********************************************************/
+
+.topHeader{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+background-color: #1E1F29;
+font-size: 14px;
+font-family: "Font Awesome 5 Free";
+font-weight: 500;
+letter-spacing: 0.1pt;
+color: whitesmoke;
+height: 50px;
+padding: 0 10%;
+}
+
+.topHeader__izq{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+    height: 30px;    
+}
+
+.topHeader__der{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 12%;
+    height: 30px;
+    font-size: 20px;
+}
+.fa__user i {
+    font-style:normal; 
+    font-size: 20px;
+}
+
+.topHeader__der ul li{
+    padding: 0px 5px; 
+    width: 20%;
+}
+
+.topHeader__izq ul li{
+    padding: 0px 5px; 
+    width: 20%;
+}
+
+.topHeader ul li i .fab{
+    font-size: 15px;
+    color: rgb(255, 255, 255);   
+    cursor: pointer;
+    padding-top: 15px;
+}
+
+.facebook:hover{
+    cursor: pointer;
+    color:#6894f1;
+    transform: scale(1.15);
+}
+
+.twitter:hover{
+    cursor: pointer;
+    color: #00acee;
+    transform: scale(1.15);
+}
+
+.youtube:hover{
+    cursor: pointer;
+    color: #c4302b;
+    transform: scale(1.15);
+}
+
+.instagram:hover{ 
+    cursor: pointer;
+    width:30px;
+    height:30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    transform: scale(1.15);
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+ul{
+    list-style: none;
+}
+
+/**********************************************************/
+                                    /*HEADER*/ 
+/**********************************************************/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    background-image: url("../img/headerBackground.PNG");
+    align-items: center;
+    height: 120px;
+    padding: 0 10%;
+}
+
+.logoDesktop{
+    width: 100%;    
+}
+.header__logo .logoSmartPhone{
+    display: none;
+}
+
+.header__buscar{        
+    display: flex;
+    width: 500px;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__buscar input{  
+    width: 80%;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #bd324a;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header__buscar .header__buscarLogo{   
+    background-color: aquamarine; 
+    width: 20%;  
+    height: 45px;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 0px 5px 5px 0px;
+    top: 3px;
+    padding-right: 20px;
+}
+
+.header__menu{
+    display: none;
+    appearance: inherit;
+    border: none;
+}
+
+/***********************************************************/
+                               /*Header Lista Deseos 
+/***********************************************************/
+
+.header__compras ul{   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: white;
+    width: 220px;
+    height: 30px;
+}
+.header__compras ul:hover{
+    cursor:pointer
+}
+
+/**********************************************************/
+                                    /*N A V*/ 
+/*********************************************************/
+
+.nav__ul{    
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;       
+    padding: 0 10%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav{                                   
+    border-top: 3px solid #D10024;
+    border-bottom: 2px solid #d6d4d4;
+}
+
+.nav__ul li a {
+    text-decoration: none;
+    color:#333;
+    background-image: linear-gradient(#D10024, #D10024);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;    
+}
+
+.nav__ul li a:hover, .nav__ul li a:focus {
+    background-size: 100% 2px;
+    color: #D10024; 
+}
+
+/**********************************************************
+                 /*banner*/ 
+/**********************************************************/
+
+.banner{
+    width: 100%;
+    height: 530px;    
+    background-image: url("../img/banner.jpg");
+    position: relative;
+    top:50px;
+}
+
+/********************************************************
+                    ver mas 
+*********************************************************/
+.h2__verMas{
+    color:#D10024;
+    text-decoration: none;
+}
+
+/********************************************************
+                    Main - Grid 
+*********************************************************/
+
+.grillaPadre{
+    display: grid;
+    grid-template-areas:
+    "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+    "producto1 producto2 producto3 producto4"
+    "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+    "producto5 producto6 producto7 producto8";
+    justify-content: space-evenly; 
+    align-items: center;
+    justify-items:flex-start;
+    gap: 3%;
+    margin: 5% 0;
+    padding: 0 10%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+.h2__titulo1{
+    grid-area: h2__titulo1;
+    margin-top: 40px;
+}
+
+.h2__titulo2{
+    grid-area: h2__titulo2;
+    margin-top: 40px;
+}
+
+.card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 300px;
+height: 430px;
+border: 0.10px solid #dfdfdf;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: #ffffff;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+}
+
+.productoDetalle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 2px solid #dfdfdf;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: flex-start;
+    padding: 20px
+}
+
+.productoDetalle p{
+color: #777;
+}
+.producto1{
+    grid-area: producto1;
+}
+.producto2{
+    grid-area: producto2;
+}
+.producto3{
+    grid-area: producto3;
+}
+.producto4{
+    grid-area: producto4;
+}
+.producto5{
+    grid-area: producto5;
+}
+.producto6{
+    grid-area: producto6;
+}
+.producto7{
+    grid-area: producto7;
+}
+.producto8{
+    grid-area: producto8;
+}
+
+/*********************************************************
+/*Suscribirse*/
+/********************************************************/
+.Suscribirse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 10%;
+    border-top: 2px solid #dfdfdf;
+}
+
+.Suscribirse h2{
+    font-family: ubuntu;
+    color: #242424;
+}
+
+.Suscribirse form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 50px;
+}
+
+.Suscribirse form input{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: ubuntu;
+}
+.Suscribirse form button{
+    width: 30%;
+    height: 100%;
+    right: 5px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 0px 10px 10px 0px;
+    padding-right: -6px;
+}
+/********************************************************
+                CONTACTO
+*********************************************************/
+
+.contact_form{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+  form p input{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border: 1px solid rgb(167 167 167);
+    margin-top: 15px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border: 1px solid rgb(167 167 167);
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+  span{
+    color: #D10024; 
+}
+  
+  .aviso{
+    font-size: 15px;  
+    color: #0e0e0e;  
+}
+  
+  .formulario__h1{
+    font-size: 39px;  
+    padding-bottom: 20px; 
+    color: #1E1F29;
+}
+  
+  .formulario__h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+  
+  .formulario__p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+}
+  
+  .formulario .formulario__input:focus{
+    outline:0;
+    border: 1px solid #dfdfdf;
+}
+  
+  .formulario .formulario__textarea:focus{
+    outline:0;
+    border: 1px solid #D10024;
+}
+
+form button{
+    width: 30%;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 6px;
+    height: 40px;
+}
+/********************************************************
+                BOTON SUBIR
+/********************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+.Btn__Flotante {  
+    font-size: 20px;  
+}
+
+.Btn__FlotanteAnchor{
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 22px;
+    position: fixed;
+    z-index: 10;
+}
+
+.Btn__Flotante:hover {
+	cursor: pointer;
+}
+
+/*******************************************************
+                    footer 
+*********************************************************/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+   background-image: url("../img/headerBackground.PNG");
+   margin-top: 10%;
+    padding: 20px 10%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #dfdfdf;
+}
+
+/***********************************************************
+MEDIAS QUERYS
+************************************************************/
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    .topHeader__smartphone{
+        display: none;
+    }
+
+    .topHeader{
+        padding: 0 8%;
+    }
+    .topHeader__der {
+        width: 40%;
+        height: 30px;
+    }
+
+    .header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 150px;
+        padding: 0;
+        gap: 10%;
+    }
+    .instagram:hover{ 
+        cursor: pointer;
+        width:12px;
+        height:12px;
+    }   
+    .logoDesktop{
+        display: none;
+    }
+
+    .header__logo .logoSmartPhone{
+        display: flex;
+    }
+
+    .header__buscar{
+        display: flex;
+        width: 90%;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buscar input{
+        width: 80%;
+    }
+
+    .header__buscar button{
+        width: 20%;
+    }
+
+    .header__menu{
+        padding-left: 5%;
+        display: inherit;
+        font-size: 45px;
+        background-color: #242424;
+        color: white;
+       cursor: pointer;
+    }
+ 
+    .header__compras ul{ 
+        display: none;  
+    }
+
+    .nav{                                   
+        border-top: 3px solid #D10024;
+        border-bottom: none;
+    }
+
+    .nav__ul{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .banner {
+        height: 230px;
+        top: 200px;
+    }
+
+    .grillaPadre{
+        grid-template-areas:
+        "h2__titulo1" 
+        "producto1"
+        "producto2"
+        "producto3" 
+        "producto4"
+        "h2__titulo2"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8";
+        border-top: 3px solid #d6d4d4;
+        gap: 1%;
+        margin: 60% 0;
+        padding: 0 8%;
+    }
+    
+    .card{
+        width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 110%;
+        font-size: 13px;
+    }
+    
+    .Suscribirse form{
+        width: 300px;
+    }
+
+    .Suscribirse form input {
+        width: 100%;
+    font-size: 20px;
+    }
+
+    .Suscribirse form button {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .contact_form {
+        margin-top: 70%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        margin-top: 20%;
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:600px){
+
+    .topHeader__smartphone , .nav__ul{
+        display: none;
+    }
+
+    .topHeader{
+        padding: 0 8%;
+    }
+    .topHeader__der {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 40%;
+        height: 30px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .instagram:hover{ 
+        cursor: pointer;
+        width:17px;
+        height:17px;
+    }   
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 150px;
+        padding: 0;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .logoDesktop{
+        display: none;
+    }
+
+    .header__logo .logoSmartPhone{
+        display: flex;
+    }
+
+    .header__buscar{
+        display: flex;
+        width: 90%;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buscar input{
+        width: 80%;
+    }
+
+    .header__buscar button{
+        width: 20%;
+    }
+
+    .header__menu{
+        padding-left: 5%;
+        display: inherit;
+        font-size: 45px;
+        background-color: #242424;
+        color: white;
+       cursor: pointer;
+    }
+ 
+    .header__compras ul{ 
+        display: none;  
+    }
+
+    .nav__ul{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .nav{                                   
+        border-top: 3px solid #D10024;
+        border-bottom: none;
+    }
+
+    .banner {
+        width: 100%;
+        height: 230px;
+        background-image: url("../img/banner.jpg");
+        position: relative;
+        top: 200px;
+    }
+    .topHeader__smartphone{
+        display: none;
+    }
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        border-top: 3px solid #d6d4d4;
+        gap: 3%;
+        margin: 40% 0;
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 430px;
+        border: 0.10px solid #dfdfdf;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #ffffff;
+    }
+        
+    .card img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 60%;
+        font-size: 15px;
+    }
+    
+    .Suscribirse form{
+        width: 450px;
+    }
+
+    .Suscribirse form input {
+    font-size: 20px;
+    }
+
+    .Suscribirse form button {
+        font-size: 20px;
+    }
+
+    .contact_form {
+        margin-top: 40%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("../img/headerBackground.PNG");
+        margin-top: 20%;
+        padding: 20px 2%;
+        font-family: 'Ubuntu', sans-serif;
+        color: #dfdfdf;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+
+    .topHeader__smartphone{
+        display: none;
+    }
+    
+    .nav__ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .nav{                                   
+        border-top: 3px solid #D10024;
+        border-bottom: none;
+    }
+
+    .topHeader{
+        padding: 0 8%;
+    }
+    .topHeader__der {
+        width: 40%;
+        height: 30px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 150px;
+        padding: 0;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .logoDesktop{
+        display: none;
+    }
+
+    .header__logo .logoSmartPhone{
+        display: flex;
+    }
+
+    .header__buscar{
+        display: flex;
+        width: 90%;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .instagram:hover{ 
+        cursor: pointer;
+        width:16px;
+        height:16px;
+    }    
+
+    .header__buscar input{
+        width: 80%;
+    }
+
+    .header__buscar button{
+        width: 20%;
+    }
+
+    .header__menu{
+        padding-left: 5%;
+        display: inherit;
+        font-size: 45px;
+        background-color: #242424;
+        color: white;
+       cursor: pointer;
+    }
+ 
+    .header__compras ul{ 
+        display: none;  
+    }
+
+    .banner {
+        width: 100%;
+        height: 230px;
+        background-image: url("../img/banner.jpg");
+        position: relative;
+        top: 200px;
+    }
+
+    .grillaPadre{
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        border-top: 3px solid #d6d4d4;
+        gap: 3%;
+        margin: 30% 0;
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card{
+        width: 100%;
+        }
+        
+    .card img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 60%;
+    }
+
+    .contact_form {
+        margin-top: 33%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        margin-top: 20%;
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+    .topHeader{
+        padding: 0 5%;
+    }
+    .header{
+     padding: 0 5%;
+    }
+    .topHeader__izq {
+        width: 50%;
+    }
+    
+    .topHeader__der {
+        width: 20%;
+    }
+
+    .instagram:hover{ 
+        cursor: pointer;
+        width:17px;
+        height:17px;
+    }   
+    
+    .header__logo{
+        width: 200px;
+    }
+
+    .logoDesktop {
+        width: 100%;
+    }
+
+    .header__buscar{        
+        display: flex;
+        width: 450px;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__buscar input{  
+        width: 80%;
+        height: 45px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid #bd324a;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .header__buscar .header__buscarLogo{   
+        width: 20%;  
+        height: 45px;
+        right: 5px;
+        font-size: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        background-color: #D10024;
+        border-radius: 0px 5px 5px 0px;
+        top: 3px;
+        padding-right: 20px;
+    }
+
+    .header__compras ul {
+        width: 170px;
+    }
+    .nav__ul{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3"
+        "producto4 . ."
+        "h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7"
+        "producto8 . .";
+        justify-content: space-evenly; 
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 5% 0;
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card{
+        width: 235px;
+    }
+        
+    .card img{
+        width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 40%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 20px 5%;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+    .topHeader{
+        padding: 0 5%;
+    }
+    .header{
+     padding: 0 5%;
+    }
+    .topHeader__izq {
+        width: 40%;
+    }
+    
+    .topHeader__der {
+        width: 20%;
+    }
+
+    .instagram:hover{ 
+        cursor: pointer;
+        width:17px;
+        height:17px;
+    }
+    .header__logo{
+        width: 200px;
+    }
+
+    .logoDesktop {
+        width: 100%;
+    }
+
+    .header__compras ul {
+        width: 200px;
+    }
+
+    .nav__ul{
+        width: 100%;
+        padding: 0 5%;
+        font-size: 20px;
+    }
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3 producto4"
+        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7 producto8";
+        justify-content: space-evenly; 
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 5% 0;
+        padding: 0 5%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card{
+        width: 230px;
+        }
+        
+    .card img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width : 1400px){
+
+    .topHeader{
+        padding: 0 5%;
+    }
+    .header{
+     padding: 0 5%;
+    }
+    .topHeader__izq {
+        width: 30%;
+    }
+    
+    .topHeader__der {
+        width: 20%;
+    }
+
+    .instagram:hover{ 
+        cursor: pointer;
+        width:17px;
+        height:17px;
+    }
+    
+    .header__logo{
+        width: 200px;
+    }
+
+    .logoDesktop {
+        width: 100%;
+    }
+
+    .header__compras ul {
+        width: 250px;
+    }
+
+    .nav__ul{
+        width: 100%;
+        padding: 0 5%;
+        font-size: 20px;
+    }
+
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3 producto4"
+        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 5% 0;
+        padding: 0 10%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card{
+        width: 250px;
+        }
+        
+    .card img{
+        width: 100%;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1401px){
+
+    .topHeader__izq{
+        width: 40%;
+        font-size: 20px;
+    } 
+
+    .topHeader__der{
+        font-size: 20px;
+        width: 20%;
+    }
+
+    .fa__user i {
+        font-size: 30px;   
+    }
+    
+    .header__buscar{
+        width: 600px;
+    }
+    .header__buscar input{
+        font-size: 25px;
+    }
+
+    .header__compras ul {
+        width: 300px;
+        font-size: 25px;
+    }
+    .nav__ul{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 20px;
+    }
+}

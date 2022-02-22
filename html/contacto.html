@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2706ae0715.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader">
+            <ul class="topHeader__izq">
+                <li><i class="fas fa-envelope faq-izq">Info@Webdev.com</i></li>
+            </ul>
+            <ul class="topHeader__der">
+                <li class="fa__user"><i class="fab fa-facebook-f facebook"></i></li>
+                <li class="fa__user"><i class="fab fa-twitter twitter"></i></li>
+                <li class="fa__user"><i class="fab fa-youtube youtube"></i></li>
+                <li class="fa__user"><i class="fab fa-instagram instagram" id="insta"></i></li>
+            </ul>
+        </section>
+        <section class="header">
+            <div class="header__logo">
+                <img src="../img/logo.PNG" alt="logo" class="logoDesktop">
+                <img src="../img/logoSmall.PNG" alt="logo SmartPhone" class="logoSmartPhone">
+            </div>
+            <div class="header__buscar">
+                <input type="text" placeholder="Buscar Productos" autocomplete="off">
+                <button class="header__buscarLogo"><i class="fas fa-search"></i></button>
+                <button class="header__menu"><i class="fa fa-bars"></i></button>                
+            </div>
+            <div class="header__compras">
+                <ul class="header__ul">
+                    <li><i class="fa fa-user"> Iniciar Sesion</i></li>
+                    <i class="fas fa-heart"></i>
+                    <li><i class="fas fa-shopping-cart"> 2</i></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <section class="seccion__nav">
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul-li"><a href="../index.html" class="a">HOME</a></li>
+                <li class="nav__ul-li"><a href="ofertas.html" class="a">OFERTAS</a></li>
+                <li class="nav__ul-li"><a href="tecnologias.html" class="a">TECNOLOGIA</a></li>
+                <li class="nav__ul-li"><a href="electrodomesticos.html" class="a">ELECTRODOMESTICOS</a>
+                </li>
+                <li class="nav__ul-li"><a href="accesorios.html" class="a">ACCESORIOS</a></li>
+                <li class="nav__ul-li"><a href="contacto.html" class="a">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main class="Contacto__main">
+        <div class="contact_form">
+            <div class="formulario">
+                <h1 class="formulario__h1">Formulario de contacto</h1>
+                <h3 class="formulario__h3">Escríbenos y en breve los pondremos en contacto contigo</h3>
+                <form action="#" method="post" class="form">
+                    <p class="formulario__p">
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" class="formulario__input"
+                            placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" class="formulario__input"
+                            placeholder="Escribe tu Email">
+                    </p>
+
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" class="formulario__input">
+                    </p>                  
+
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" class="formulario__input"
+                            placeholder="Escribe un asunto">
+                    </p>
+
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class=".formulario__textarea" id="mensaje" required="obligatorio"
+                            placeholder="Deja aquí tu comentario..."></textarea>
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="enviar" class=".Contacto__button">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="Btn__Flotante">
+        <a class="Btn__FlotanteAnchor btn__FlotanteV2 a" href="#top"><img src="../img/flecha.png" alt="subir"></a>
+    </div>
+    <footer>
+        <div class="footer__SobreNosotros">
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <p>Lorem ipsum dolor sit</p>
+                <p>localidad</p>
+                <p>telefono</p>
+                <p>email</p>
+            </div>
+        </div>
+        <div class="footer__Informacion">
+            <h3>INFORMACION</h3>
+            <p>Contactanos</p>
+            <p>Politica Privacidad</p>
+            <p>Reenvolsos</p>
+            <p>Terminos de Condiciones</p>
+        </div>
+        <div class="footer__Servicio">
+            <h3>Mi Cuenta</h3>
+            <p>Carrito Compras</p>
+            <p>Lista de deseos</p>
+            <p>Ayuda</p>
+        </div>
+    </footer>
+</body>
+
+</html>
