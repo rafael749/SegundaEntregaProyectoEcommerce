@@ -663,10 +663,10 @@ MEDIAS QUERYS
 
     .banner figure img {
         width: 20%;
-        height: 150px;
+        height: 140px;
         position: relative;
         object-fit: scale-down;
-        margin: -115px 0;
+        margin: 0 0;
     }
 
     .grillaPadre{
