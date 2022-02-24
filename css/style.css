@@ -222,11 +222,54 @@ ul{
 /**********************************************************/
 
 .banner{
-    width: 100%;
-    height: 530px;    
-    background-image: url("../img/banner.jpg");
-    position: relative;
-    top:50px;
+    overflow: hidden;
+}
+
+.banner figure{
+position: relative;
+width: 500%;
+height: 500px;
+margin: 0;
+left: 0;
+animation: 20s banner infinite;
+}
+
+.banner figure img{
+    width: 20%;
+    float: left;
+    height: 530px;
+    object-fit: scale-down;
+
+}
+
+@keyframes banner{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
 }
 
 /********************************************************
@@ -243,6 +286,7 @@ ul{
 
 .grillaPadre{
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
     "producto1 producto2 producto3 producto4"
@@ -588,12 +632,16 @@ MEDIAS QUERYS
         gap: 25px;
     }
 
-    .banner {
+    .banner figure img {
+        width: 20%;
         height: 230px;
+        position: relative;
         top: 200px;
+        object-fit: scale-down;
     }
 
     .grillaPadre{
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "h2__titulo1" 
         "producto1"
@@ -607,7 +655,7 @@ MEDIAS QUERYS
         "producto8";
         border-top: 3px solid #d6d4d4;
         gap: 1%;
-        margin: 60% 0;
+        margin: -25% 0;
         padding: 0 8%;
     }
     
@@ -733,18 +781,20 @@ MEDIAS QUERYS
         border-bottom: none;
     }
 
-    .banner {
-        width: 100%;
+    .banner figure img {
+        width: 20%;
         height: 230px;
-        background-image: url("../img/banner.jpg");
         position: relative;
         top: 200px;
+        object-fit: scale-down;
     }
+ 
     .topHeader__smartphone{
         display: none;
     }
     .grillaPadre{
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "h2__titulo1 h2__titulo1"
         "producto1 producto2"
@@ -757,7 +807,7 @@ MEDIAS QUERYS
         justify-items:flex-start;
         border-top: 3px solid #d6d4d4;
         gap: 3%;
-        margin: 40% 0;
+        margin: -10% 0;
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
@@ -898,15 +948,16 @@ MEDIAS QUERYS
         display: none;  
     }
 
-    .banner {
-        width: 100%;
+    .banner figure img {
+        width: 20%;
         height: 230px;
-        background-image: url("../img/banner.jpg");
         position: relative;
         top: 200px;
+        object-fit: scale-down;
     }
 
     .grillaPadre{
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "h2__titulo1 h2__titulo1"
         "producto1 producto2"
@@ -919,7 +970,7 @@ MEDIAS QUERYS
         justify-items:flex-start;
         border-top: 3px solid #d6d4d4;
         gap: 3%;
-        margin: 30% 0;
+        margin: -5% 0;
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
@@ -1019,8 +1070,17 @@ MEDIAS QUERYS
         padding: 0 5%;
     }
 
+    .banner figure img {
+        width: 20%;
+        /* height: 246px; */
+        position: relative;
+        margin: -100px 0;
+        object-fit: scale-down;
+    }
+
     .grillaPadre{
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "h2__titulo1 h2__titulo1 h2__titulo1"
         "producto1 producto2 producto3"
@@ -1032,7 +1092,7 @@ MEDIAS QUERYS
         align-items: center;
         justify-items:flex-start;
         gap: 3%;
-        margin: 5% 0;
+        margin: -17% 0;
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
@@ -1093,6 +1153,7 @@ MEDIAS QUERYS
         width: 100%;
         padding: 0 5%;
         font-size: 20px;
+        object-fit: scale-down;
     }
     .grillaPadre{
         display: grid;
