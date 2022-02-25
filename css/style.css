@@ -138,10 +138,29 @@ ul{
     height: 45px;
     font-size: 20px;
     padding-left: 10px;
-    border-radius: 5px 0 0 5px;
+   /* border-radius: 5px 0 0 5px;*/
     border: 2px solid #bd324a;
     font-family: 'Ubuntu', sans-serif;
+    line-height: 0.70em;
+    outline: none;
+    border-right: 2px solid #c4302b;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
 }
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.header__buscar input:focus{  
+-webkit-box-reflect: below 0.2px linear-gradient(transparent,rgb(14, 11, 11));
+}
+
 
 .header__buscar .header__buscarLogo{   
     background-color: aquamarine; 
@@ -164,6 +183,13 @@ ul{
     border: none;
 }
 
+.header__buscarLogo:hover, .boton:hover, .Contacto__button:hover{
+    box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;
+}
+
+
+
+
 /***********************************************************/
                                /*Header Lista Deseos 
 /***********************************************************/
@@ -178,8 +204,21 @@ ul{
     height: 30px;
 }
 .header__compras ul:hover{
-    cursor:pointer
+    cursor:pointer;
 }
+
+.fa-user:hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(14, 11, 11));
+}
+
+.fa-heart:hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(14, 11, 11));
+}
+
+.fa-shopping-cart:hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(14, 11, 11));
+}
+
 
 /**********************************************************/
                                     /*N A V*/ 
@@ -195,6 +234,7 @@ ul{
     height: 50px;       
     padding: 0 10%;
     font-family: 'Ubuntu', sans-serif;
+    
 }
 
 .nav{                                   
@@ -215,6 +255,7 @@ ul{
 .nav__ul li a:hover, .nav__ul li a:focus {
     background-size: 100% 2px;
     color: #D10024; 
+    text-shadow: 0 5px 50px 0 #f70a01 inset,0 5px 50px 0 #fc0800;
 }
 
 /**********************************************************
@@ -298,8 +339,13 @@ animation: 20s banner infinite;
 .h2__verMas{
     color:#D10024;
     text-decoration: none;
+    animation: animate 10s linear infinite;
 }
 
+.h2__verMas:hover{
+box-shadow: 0 50px 50px 0 #f49c99 inset, 0 5px 50px 0 #ff0d04;
+text-shadow: 0 5px 50px 0 #ff5650,0 5px 50px 0 #ff5d57;
+}
 /********************************************************
                     Main - Grid 
 *********************************************************/
