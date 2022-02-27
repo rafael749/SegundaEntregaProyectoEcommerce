@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img__logo{
+    max-width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+.form__buscar{
+width: 100%;
+}
+
+.formulario__Padre{
+    width: 100%;
+}

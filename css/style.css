@@ -8,68 +8,27 @@ body{
     background-color: rgb(236, 236, 236);
 }
 
-.container{
-    background: #333;
-}
 /**********************************************************/
                                     /*TOP HEADER*/ 
 /**********************************************************/
 
-.topHeader{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: center;
-background-color: #1E1F29;
-font-size: 14px;
-font-family: "Font Awesome 5 Free";
-font-weight: 500;
-letter-spacing: 0.1pt;
-color: whitesmoke;
-height: 50px;
-padding: 0 10%;
+.img__logo{
+    max-width: 100%;
+}
+.form__buscar{
+    width: 100%;
+}
+    
+.formulario__Padre{
+    width: 100%;
 }
 
-.topHeader__izq{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 30%;
-    height: 30px;    
+ul{
+    list-style: none;
 }
-
-.topHeader__der{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 12%;
-    height: 30px;
-    font-size: 20px;
-}
-.fa__user i {
-    font-style:normal; 
-    font-size: 20px;
-}
-
-.topHeader__der ul li{
-    padding: 0px 5px; 
-    width: 20%;
-}
-
-.topHeader__izq ul li{
-    padding: 0px 5px; 
-    width: 20%;
-}
-
-.topHeader ul li i .fab{
-    font-size: 15px;
-    color: rgb(255, 255, 255);   
-    cursor: pointer;
-    padding-top: 15px;
-}
+/************************************************************************************************************
+                            F I N   H E A D E R   C O N    B O O S T R A P
+/************************************************************************************************************/
 
 .facebook:hover{
     cursor: pointer;
@@ -89,77 +48,9 @@ padding: 0 10%;
     transform: scale(1.15);
 }
 
-.instagram:hover{ 
-    cursor: pointer;
-    width:30px;
-    height:30px;
-    margin-top: 0px;
-    padding-top: 0px;
-    transform: scale(1.15);
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-ul{
-    list-style: none;
-}
-
 /**********************************************************/
                                     /*HEADER*/ 
 /**********************************************************/
-
-.header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    justify-content: space-between; 
-    background-image: url("../img/headerBackground.PNG");
-    align-items: center;
-    height: 120px;
-    padding: 0 10%;
-}
-
-.logoDesktop{
-    width: 100%;    
-}
-.header__logo .logoSmartPhone{
-    display: none;
-}
-
-.header__buscar{        
-    display: flex;
-    width: 500px;
-    height: 45px;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__buscar input{  
-    width: 80%;
-    height: 45px;
-    font-size: 20px;
-    padding-left: 10px;
-   border-radius: 5px 0 0 5px;
-    border: 2px solid #bd324a;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.header__buscar .header__buscarLogo{   
-    background-color: aquamarine; 
-    width: 20%;  
-    height: 45px;
-    right: 5px;
-    font-size: 30px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    background-color: #D10024;
-    border-radius: 0px 5px 5px 0px;
-    top: 3px;
-    padding-right: 20px;
-}
 
 .header__buscarLogo:hover, .boton:hover, .Contacto__button:hover{
     box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;
@@ -169,27 +60,6 @@ ul{
                                /*Header Lista Deseos 
 /***********************************************************/
 
-.header__compras ul{   
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    color: white;
-    width: 220px;
-    height: 30px;
-}
-.header__compras ul:hover{
-    cursor:pointer;
-}
-
-/**********************************************************/
-                                    /*N A V*/ 
-/*********************************************************/
-
-.navbar{                                   
-    border-top: 3px solid #D10024;
-    border-bottom: 2px solid #d6d4d4;
-}
 
 /**********************************************************
                  /*banner*/ 
@@ -201,6 +71,9 @@ ul{
 .h2__verMas{
     color:#D10024;
     text-decoration: none;
+}
+.h2__verMas:hover{
+    color: #D10024;
 }
 /********************************************************
                     Main - Grid 
@@ -478,60 +351,6 @@ MEDIAS QUERYS
 
 @media screen and (min-width:320px) and (max-width:480px){
 
-    .topHeader{
-        padding: 0 8%;
-    }
-    .topHeader__der {
-        width: 40%;
-        height: 30px;
-    }
-
-    .header{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        height: 150px;
-        padding: 0;
-        gap: 10%;
-    }
-    .instagram:hover{ 
-        cursor: pointer;
-        width:12px;
-        height:12px;
-    }   
-    .logoDesktop{
-        display: none;
-    }
-
-    .header__logo .logoSmartPhone{
-        display: flex;
-    }
-
-    .header__buscar{
-        display: flex;
-        width: 90%;
-        height: 45px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__buscar input{
-        width: 80%;
-    }
-
-    .header__buscar button{
-        width: 20%;
-    }
- 
-    .header__compras ul{ 
-        display: none;  
-    }
-
-    .nav__var__li__a:hover, .nav__var__li__a:focus {
-        background-size: 10% 2px;
-     /*   color: #D10024; */
-    }
-
     .grillaPadre{
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
@@ -586,65 +405,6 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:481px) and (max-width:600px){
-
-    .topHeader{
-        padding: 0 8%;
-    }
-    .topHeader__der {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 40%;
-        height: 30px;
-        align-items: center;
-        font-size: 20px;
-    }
-
-    .instagram:hover{ 
-        cursor: pointer;
-        width:17px;
-        height:17px;
-    }   
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        height: 150px;
-        padding: 0;
-        gap: 10%;
-        align-items: center;
-    }
-
-    .logoDesktop{
-        display: none;
-    }
-
-    .header__logo .logoSmartPhone{
-        display: flex;
-    }
-
-    .header__buscar{
-        display: flex;
-        width: 90%;
-        height: 45px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__buscar input{
-        width: 80%;
-    }
-
-    .header__buscar button{
-        width: 20%;
-    }
- 
-    .header__compras ul{ 
-        display: none;  
-    }
 
     .grillaPadre{
         display: grid;
@@ -721,79 +481,6 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:601px) and (max-width:768px){
-    
-    .nav{                                   
-        border-top: 3px solid #D10024;
-        border-bottom: none;
-    }
-
-    .topHeader{
-        padding: 0 8%;
-    }
-    .topHeader__der {
-        width: 40%;
-        height: 30px;
-    }
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        height: 150px;
-        padding: 0;
-        gap: 10%;
-        align-items: center;
-    }
-
-    .logoDesktop{
-        display: none;
-    }
-
-    .header__logo .logoSmartPhone{
-        display: flex;
-    }
-
-    .header__buscar{
-        display: flex;
-        width: 90%;
-        height: 45px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .instagram:hover{ 
-        cursor: pointer;
-        width:16px;
-        height:16px;
-    }    
-
-    .header__buscar input{
-        width: 80%;
-    }
-
-    .header__buscar button{
-        width: 20%;
-    }
- 
-    .header__compras ul{ 
-        display: none;  
-    }
-
-    .nav__var__li__a {
-        text-decoration: none;
-        color:#333;
-        background-image: linear-gradient(#D10024, #D10024);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;    
-    }
-    
-    .nav__var__li__a:hover, .nav__var__li__a:focus {
-        background-size: 100% 2px;
-        color: #D10024; 
-    }
 
     .grillaPadre{
         grid-template-columns: repeat(2, 1fr);
@@ -842,69 +529,6 @@ MEDIAS QUERYS
 
 @media screen and (min-width:769px) and (max-width: 1024px){
 
-    .topHeader{
-        padding: 0 5%;
-    }
-    .header{
-     padding: 0 5%;
-    }
-    .topHeader__izq {
-        width: 50%;
-    }
-    
-    .topHeader__der {
-        width: 20%;
-    }
-
-    .instagram:hover{ 
-        cursor: pointer;
-        width:17px;
-        height:17px;
-    }   
-    
-    .header__logo{
-        width: 200px;
-    }
-
-    .logoDesktop {
-        width: 100%;
-    }
-
-    .header__buscar{        
-        display: flex;
-        width: 450px;
-        height: 45px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header__buscar input{  
-        width: 80%;
-        height: 45px;
-        font-size: 20px;
-        padding-left: 10px;
-        border-radius: 5px 0 0 5px;
-        border: 2px solid #bd324a;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    
-    .header__buscar .header__buscarLogo{   
-        width: 20%;  
-        height: 45px;
-        right: 5px;
-        font-size: 30px;
-        color: white;
-        border: none;
-        cursor: pointer;
-        background-color: #D10024;
-        border-radius: 0px 5px 5px 0px;
-        top: 3px;
-        padding-right: 20px;
-    }
-
-    .header__compras ul {
-        width: 170px;
-    }
-
     .grillaPadre{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -945,51 +569,6 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px){
-    .topHeader{
-        padding: 0 5%;
-    }
-    .header{
-     padding: 0 5%;
-    }
-    .topHeader__izq {
-        width: 40%;
-    }
-    
-    .topHeader__der {
-        width: 20%;
-    }
-
-    .instagram:hover{ 
-        cursor: pointer;
-        width:17px;
-        height:17px;
-    }
-    .header__logo{
-        width: 200px;
-    }
-
-    .logoDesktop {
-        width: 100%;
-    }
-
-    .header__compras ul {
-        width: 200px;
-    }
-
-    .nav__var__li__a {
-        text-decoration: none;
-        color:#333;
-        background-image: linear-gradient(#D10024, #D10024);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;    
-    }
-    
-    .nav__var__li__a:hover, .nav__var__li__a:focus {
-        background-size: 100% 2px;
-        color: #D10024; 
-    }
 
     .grillaPadre{
         display: grid;
@@ -1018,53 +597,6 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:1201px) and (max-width : 1400px){
-
-    .topHeader{
-        padding: 0 5%;
-    }
-    .header{
-     padding: 0 5%;
-    }
-    .topHeader__izq {
-        width: 30%;
-    }
-    
-    .topHeader__der {
-        width: 20%;
-    }
-
-    .instagram:hover{ 
-        cursor: pointer;
-        width:17px;
-        height:17px;
-    }
-    
-    .header__logo{
-        width: 200px;
-    }
-
-    .logoDesktop {
-        width: 100%;
-    }
-
-    .header__compras ul {
-        width: 250px;
-    }
-
-    .nav__var__li__a {
-        text-decoration: none;
-        color:#333;
-        background-image: linear-gradient(#D10024, #D10024);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;    
-    }
-    
-    .nav__var__li__a:hover, .nav__var__li__a:focus {
-        background-size: 100% 2px;
-        color: #D10024; 
-    }
 
     .grillaPadre{
         display: grid;
@@ -1098,46 +630,6 @@ MEDIAS QUERYS
 
 @media screen and (min-width:1401px){
 
-    .topHeader__izq{
-        width: 40%;
-        font-size: 20px;
-    } 
-
-    .topHeader__der{
-        font-size: 20px;
-        width: 20%;
-    }
-
-    .fa__user i {
-        font-size: 30px;   
-    }
-    
-    .header__buscar{
-        width: 600px;
-    }
-    .header__buscar input{
-        font-size: 25px;
-    }
-
-    .header__compras ul {
-        width: 300px;
-        font-size: 25px;
-    }
-
-    .nav__var__li__a {
-        text-decoration: none;
-        color:#333;
-        background-image: linear-gradient(#D10024, #D10024);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 50% 2px;
-        transition: background-size .3s;    
-    }
-    
-    .nav__var__li__a:hover, .nav__var__li__a:focus {
-        background-size: 100% 2px;
-        color: #D10024; 
-    }
     footer{
         font-size: 20px;
     }

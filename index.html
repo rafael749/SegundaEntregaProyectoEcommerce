@@ -16,60 +16,85 @@
     <script src="https://kit.fontawesome.com/2706ae0715.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <section class="topHeader">
-            <ul class="topHeader__izq">
-                <li><i class="fas fa-envelope faq-izq">Rafa@Webdev.com</i></li>
-            </ul>
-            <ul class="topHeader__der">
-                <li class="fa__user"><i class="fab fa-facebook-f facebook"></i></li>
-                <li class="fa__user"><i class="fab fa-twitter twitter"></i></li>
-                <li class="fa__user"><i class="fab fa-youtube youtube"></i></li>
-                <li class="fa__user"><i class="fab fa-instagram instagram" id="insta"></i></li>
-            </ul>
-        </section>
-        <section class="header">
-            <div class="header__logo">
-                <img src="./img/logo.PNG" alt="logo" class="logoDesktop">
-                <img src="./img/logoSmall.PNG" alt="logo SmartPhone" class="logoSmartPhone">
-            </div>
-            <div class="header__buscar">
-                <input type="text" placeholder="Buscar Productos" autocomplete="off" class="InpuTanimacion">
-                <button class="header__buscarLogo"><i class="fas fa-search"></i></button>
-                <!--
-                <button class="header__menu"><i class="fa fa-bars"></i></button>       
-                -->         
-            </div>
-            <div class="header__compras">
-                <ul class="header__ul">
-                    <li><i class="fa fa-user"> Iniciar Sesion</i></li>
-                    <i class="fas fa-heart"></i>
-                    <li><i class="fas fa-shopping-cart"> 2</i></li>
-                </ul>
-            </div>
-        </section>
-    </header>
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">MI LOGO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
-                  <a class="nav-link" aria-current="page" href="html/ofertas.html">OFERTAS</a>
-                  <a class="nav-link" aria-current="page" href="html/tecnologias.html">TECNOLOGIA</a>
-                  <a class="nav-link" aria-current="page" href="html/electrodomesticos.html">ELECTRODOMESTICOS</a>
-                  <a class="nav-link" aria-current="page" href="html/accesorios.html">ACCESORIOS</a>
-                  <a class="nav-link" aria-current="page" href="html/contacto.html">CONTACTO</a>
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled=""></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </section>
+  <!---------------------------------------ESTE CODIGO FUNCIONA OK------------------------------------------------------------------>
+
+  <section class="container">
+    <!--border-->
+    <div class="row justify-content-start">
+      <!--
+      <div class="navbar navbar-expand-lg navbar-expand-md navbar-expand navbar-light bg-light border">
+
+        <div class="d-flex container justify-content-lg-start justify-content-md-start  col-8 col-md-6 p-0">
+          <ul
+            class="d-flex justify-content-start justify-content-sm-evenly justify-content-md-start justify-content-lg-start col-12 col-lg-8 border">
+          <li><i class="fas fa-envelope faq-izq"></i> <span>Info@.DesarrolloWebcom</span></li>
+        </ul>
+        </div>
+        <div class="container justify-content-lg-end justify-content-md-end col-4 col-md-6 p-0">
+          <ul
+            class="d-flex justify-content-evenly justify-content-sm-evenly justify-content-md-evenly justify-content-lg-evenly col-12 col-lg-6 col-md-6 p-0 border">
+            <li><i class="fab fa-facebook-f facebook"></i></li>
+            <li><i class="fab fa-twitter twitter"></i></li>
+            <li><i class="fab fa-youtube youtube"></i></li>
+            <li><i class="fab fa-instagram instagram" id="insta"></i></li>
+        </ul>
+        </div>
+      </div>
+      -->
+    </div>
+    <div class="d-flex bd-highlight">
+      <!--border-->
+      <div class="p-2 flex-grow-1 bd-highlight"><i class="fas fa-envelope faq-izq"></i>Info@DesarrolloWebcom</div>
+      <div class="p-2 bd-highlight"><i class="fab fa-facebook-f facebook"></i></div>
+      <div class="p-2 bd-highlight"><i class="fab fa-twitter twitter"></i></div>
+      <div class="p-2 bd-highlight"><i class="fab fa-youtube youtube"></i></div>
+      <div class="p-2 bd-highlight"><i class="fab fa-instagram instagram" id="insta"></i></div>
+    </div>
+    <div class="row justify-content-start">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div
+          class="d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-start col-12 col-lg-3 col-md-3 col-sm-4">
+          <!--border-->
+          <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt="logo" width="" class="img__logo"></a>
+        </div>
+        <div
+          class="d-flex  justify-content-end justify-content-sm-end justify-content-md-end justify-content-lg-center col-12 col-lg-6 col-md-9 col-sm-8">
+          <!--border-->
+          <form class="formulario__Padre d-flex">
+            <input class="form__buscar  me-2" type="search" placeholder="Buscar Producto.." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <ul
+          class=" d-flex justify-content-sm-between justify-content-lg-evenly container col-12 col-lg-3 col-md-12 m-0 ">
+          <!--border-->
+          <li><i class="fa fa-user"></i>Ingresar</li>
+          <li><i class="fas fa-heart"></i>7</li>
+          <li><i class="fas fa-shopping-cart"></i>2</li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="container p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
+            <a class="nav-link" aria-current="page" href="html/ofertas.html">OFERTAS</a>
+            <a class="nav-link" aria-current="page" href="html/tecnologias.html">TECNOLOGIA</a>
+            <a class="nav-link" aria-current="page" href="html/electrodomesticos.html">ELECTRODOMESTICOS</a>
+            <a class="nav-link" aria-current="page" href="html/accesorios.html">ACCESORIOS</a>
+            <a class="nav-link" aria-current="page" href="html/contacto.html">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
     <main>
         <div class="grillaPadre">
             <h2 class="h2__titulo1">Los mas buscados <a href="html/tecnologias.html" class="h2__verMas">Ver
