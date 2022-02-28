@@ -1,36 +1,54 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.img__logo{
-    max-width: 100%;
+body{
+    background-color: rgb(236, 236, 236);
+}
+/**********************************************************/
+                                    /*TOP HEADER*/ 
+/**********************************************************/
+.container__manualTopHeader{
+    background-color: #232222;
+    padding: 0px 11%;
+    color: #fbfbfb;
 }
 
-li{
-    list-style-type: none;
-}
-
-.form__buscar{
-width: 100%;
-}
-
-.formulario__Padre{
-    width: 100%;
-}
-
-.container__manual{
+.container__manual {
     background-color: #1a1717;
     padding: 0px 11%;
     color: #fbfbfb;
     border-bottom: 3px solid #D10024;
 }
 
-.container__manualTopHeader{
-    background-color: #232222;
-    padding: 0px 11%;
-    color: #fbfbfb;
+.img__logo{
+    max-width: 100%;
 }
+.form__buscar{
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+    border-color: #D10024;
+}
+
+.Suscribirse form input, .form__buscar:focus{
+    outline: none;
+}
+
+.formulario__Padre{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/********************************************************************
+                           I N I C I O
+*********************************************************************/
 
 .form__login{
     padding-right: 0px;
@@ -79,4 +97,675 @@ width: 100%;
         width: 150px;
         
     }
+}
+/********************************************************************
+                           F I N
+*********************************************************************/
+
+
+/************************************************************************************************************
+                            F I N   H E A D E R   C O N    B O O S T R A P
+/************************************************************************************************************/
+
+.facebook:hover{
+    cursor: pointer;
+    color:#6894f1;
+    transform: scale(1.15);
+}
+
+.twitter:hover{
+    cursor: pointer;
+    color: #00acee;
+    transform: scale(1.15);
+}
+
+.youtube:hover{
+    cursor: pointer;
+    color: #c4302b;
+    transform: scale(1.15);
+}
+
+/**********************************************************/
+                                    /*HEADER*/ 
+/**********************************************************/
+.btn__buscar{   
+    width: 30%;  
+    height: 45px;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 0px 50px 50px 0px;
+    top: 3px;
+    padding-right: 20px;
+}
+.btn__buscar:hover, .boton:hover, .Contacto__button:hover{
+  /*  box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;*/
+    box-shadow: 0 0px 0px 0 #d21c1c inset, 0 0px 50px 0 #d00808;
+}
+
+/************************************************************
+                             N A V   
+/***********************************************************/
+.nav{                                   
+    border-top: 3px solid #D10024;
+    border-bottom: 2px solid #d6d4d4;
+}
+
+/*
+ul li a{
+    text-decoration: none;
+    color:#333;
+    background-image: linear-gradient(#D10024, #D10024);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;    
+}
+ul li a:hover, .nav li a:focus {
+    background-size: 100% 2px;
+    color: #D10024; 
+}
+*/
+
+
+/**********************************************************
+                 /*banner*/ 
+/**********************************************************/
+
+/********************************************************
+                    ver mas 
+*********************************************************/
+.h2__verMas{
+    color:#D10024;
+    text-decoration: none;
+}
+.h2__verMas:hover{
+    color: #D10024;
+    font-size: 2.02rem;
+}
+/********************************************************
+                    Main - Grid 
+*********************************************************/
+
+.grillaPadre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+    "producto1 producto2 producto3 producto4"
+    "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+    "producto5 producto6 producto7 producto8";
+    justify-content: space-evenly; 
+    align-items: center;
+    justify-items:flex-start;
+    gap: 3%;
+    margin: 5% 0;
+    padding: 0 10%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+.h2__titulo1{
+    grid-area: h2__titulo1;
+    margin-top: 40px;
+}
+
+.h2__titulo2{
+    grid-area: h2__titulo2;
+    margin-top: 40px;
+}
+
+.card__css-manual{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 300px;
+/*max-height: 430px;  TODO: Revisar donde toma el height paralelo*/
+border: 0.10px solid #dfdfdf;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: #ffffff;
+}
+
+.card__css-manual:hover{
+    border-color: #D10024;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card__css-manual img{
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+}
+
+.productoDetalle , .carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* border-top: 2px solid #dfdfdf;
+    gap: 10px;*/
+    margin-top: 30px;
+    padding: 20px
+}
+
+.productoDetalle h3{
+    color:#D10024;
+    text-align: center;
+}
+
+.carrito{
+    display: flex;
+    border-top: 2px solid #dfdfdf;
+    flex-direction: row;
+    justify-content: space-around;
+
+    opacity: 0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.carrito:hover{
+opacity: 1;
+color: #D10024;
+}
+
+.productoDetalle p{
+color: #777;
+}
+.producto1{
+    grid-area: producto1;
+}
+.producto2{
+    grid-area: producto2;
+}
+.producto3{
+    grid-area: producto3;
+}
+.producto4{
+    grid-area: producto4;
+}
+.producto5{
+    grid-area: producto5;
+}
+.producto6{
+    grid-area: producto6;
+}
+.producto7{
+    grid-area: producto7;
+}
+.producto8{
+    grid-area: producto8;
+}
+
+/*********************************************************
+/*Suscribirse*/
+/********************************************************/
+.Suscribirse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 10%;
+    border-top: 2px solid #dfdfdf;
+}
+
+.Suscribirse h2{
+    font-family: ubuntu;
+    color: #242424;
+}
+
+.Suscribirse form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 50px;
+}
+
+.Suscribirse form input{
+    width: 70%;
+    height: 100%;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: ubuntu;
+}
+
+.Suscribirse form button{
+    width: 30%;
+    height: 100%;
+    right: 5px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 0px 50px 50px 0px;
+    padding-right: -6px;
+}
+/********************************************************
+                CONTACTO
+*********************************************************/
+
+.contact_form{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+  form p input{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border: 1px solid rgb(167 167 167);
+    margin-top: 15px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border: 1px solid rgb(167 167 167);
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+  span{
+    color: #D10024; 
+}
+  
+  .aviso{
+    font-size: 15px;  
+    color: #0e0e0e;  
+}
+  
+  .formulario__h1{
+    font-size: 39px;  
+    padding-bottom: 20px; 
+    color: #1E1F29;
+}
+  
+  .formulario__h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+  
+  .formulario__p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+}
+  
+  .formulario .formulario__input:focus{
+    outline:0;
+    border: 1px solid #dfdfdf;
+}
+  
+  .formulario .formulario__textarea:focus{
+    outline:0;
+    border: 1px solid #D10024;
+}
+
+form button{
+    width: 30%;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 6px;
+    height: 40px;
+}
+/********************************************************
+                BOTON SUBIR
+/********************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+.Btn__Flotante {  
+    font-size: 20px;  
+}
+
+.Btn__FlotanteAnchor{
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 22px;
+    position: fixed;
+    z-index: 10;
+}
+
+.Btn__Flotante:hover {
+	cursor: pointer;
+}
+
+/*******************************************************
+                    footer 
+*********************************************************/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+   background-image: url("../img/headerBackground.PNG");
+   margin-top: 10%;
+    padding: 20px 10%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #dfdfdf;
+}
+footer p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+/***********************************************************
+MEDIAS QUERYS
+************************************************************/
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    .grillaPadre{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "h2__titulo1" 
+        "producto1"
+        "producto2"
+        "producto3" 
+        "producto4"
+        "h2__titulo2"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8";
+        border-top: 3px solid #d6d4d4;
+        gap: 1%;
+        margin: 10% 0;
+        padding: 0 8%;
+    }
+    
+    .card__css-manual{
+        width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 110%;
+        font-size: 13px;
+    }
+    
+    .Suscribirse form{
+        width: 300px;
+    }
+
+    .Suscribirse form input {
+        width: 100%;
+    font-size: 20px;
+    }
+
+    .Suscribirse form button {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .contact_form {
+        margin-top: 70%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        margin-top: 20%;
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:600px){
+
+    .grillaPadre{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        border-top: 3px solid #d6d4d4;
+        gap: 3%;
+     /*   margin: -10% 0;   */
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card__css-manual{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      /*  height: 430px; */
+        border: 0.10px solid #dfdfdf;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #ffffff;
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 60%;
+        font-size: 15px;
+    }
+    
+    .Suscribirse form{
+        width: 450px;
+    }
+
+    .Suscribirse form input {
+    font-size: 20px;
+    }
+
+    .Suscribirse form button {
+        font-size: 20px;
+    }
+
+    .contact_form {
+        margin-top: 40%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("../img/headerBackground.PNG");
+        margin-top: 20%;
+        padding: 20px 2%;
+        font-family: 'Ubuntu', sans-serif;
+        color: #dfdfdf;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+
+    .grillaPadre{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        border-top: 3px solid #d6d4d4;
+        gap: 3%;
+      /*  margin: -5% 0;        */
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card__css-manual{
+        width: 100%;
+        }
+        
+    .card__css-manual img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 60%;
+    }
+
+    .contact_form {
+        margin-top: 33%;
+        border-top: 3px solid #d6d4d4;
+    }
+
+    footer {
+        margin-top: 20%;
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+    .grillaPadre{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3"
+        "producto4 . ."
+        "h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7"
+        "producto8 . .";
+        justify-content: space-evenly; 
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 0% 0;
+        padding: 0 8%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card__css-manual{
+        width: 235px;
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 40%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 20px 5%;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3 producto4"
+        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7 producto8";
+        justify-content: space-evenly; 
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 0% 0;
+        padding: 0 5%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card__css-manual{
+        width: 230px;
+        }
+        
+    .card__css-manual img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width : 1400px){
+
+    .grillaPadre{
+        display: grid;
+        grid-template-areas:
+        "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+        "producto1 producto2 producto3 producto4"
+        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7 producto8";
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items:flex-start;
+        gap: 3%;
+        margin: 5% 0;
+        padding: 0 10%;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .card__css-manual{
+        width: 250px;
+        }
+        
+    .card__css-manual img{
+        width: 100%;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1401px){
 }
