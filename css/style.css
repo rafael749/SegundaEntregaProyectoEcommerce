@@ -7,18 +7,31 @@
 body{
     background-color: rgb(236, 236, 236);
 }
-
 /**********************************************************/
                                     /*TOP HEADER*/ 
 /**********************************************************/
+
+.container__manual {
+    background-color: #1a1717;
+    padding: 0px 11%;
+    color: #fbfbfb;
+    border-bottom: 3px solid #D10024;
+}
 
 .img__logo{
     max-width: 100%;
 }
 .form__buscar{
     width: 100%;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+    border-color: #D10024;
 }
-    
+
+.Suscribirse form input, .form__buscar:focus{
+    outline: none;
+}
+
 .formulario__Padre{
     width: 100%;
 }
@@ -51,14 +64,47 @@ ul{
 /**********************************************************/
                                     /*HEADER*/ 
 /**********************************************************/
-
-.header__buscarLogo:hover, .boton:hover, .Contacto__button:hover{
-    box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;
+.btn__buscar{   
+    width: 30%;  
+    height: 45px;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #D10024;
+    border-radius: 0px 50px 50px 0px;
+    top: 3px;
+    padding-right: 20px;
+}
+.btn__buscar:hover, .boton:hover, .Contacto__button:hover{
+  /*  box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;*/
+    box-shadow: 0 0px 0px 0 #d21c1c inset, 0 0px 50px 0 #d00808;
 }
 
+/************************************************************
+                             N A V   
 /***********************************************************/
-                               /*Header Lista Deseos 
-/***********************************************************/
+.nav{                                   
+    border-top: 3px solid #D10024;
+    border-bottom: 2px solid #d6d4d4;
+}
+
+/*
+ul li a{
+    text-decoration: none;
+    color:#333;
+    background-image: linear-gradient(#D10024, #D10024);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;    
+}
+ul li a:hover, .nav li a:focus {
+    background-size: 100% 2px;
+    color: #D10024; 
+}
+*/
 
 
 /**********************************************************
@@ -74,6 +120,7 @@ ul{
 }
 .h2__verMas:hover{
     color: #D10024;
+    font-size: 2.02rem;
 }
 /********************************************************
                     Main - Grid 
@@ -106,36 +153,59 @@ ul{
     margin-top: 40px;
 }
 
-.card{
+.card__css-manual{
 display: flex;
 flex-direction: column;
 justify-content: center;
 width: 300px;
-height: 430px;
+/*max-height: 430px;  TODO: Revisar donde toma el height paralelo*/
 border: 0.10px solid #dfdfdf;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 background-color: #ffffff;
 }
 
-.card:hover{
+.card__css-manual:hover{
+    border-color: #D10024;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card img{
+.card__css-manual img{
     width: 100%;
     height: 250px;
     object-fit: scale-down;
 }
 
-.productoDetalle{
+.productoDetalle , .carrito{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border-top: 2px solid #dfdfdf;
-    gap: 10px;
+    align-items: center;
+   /* border-top: 2px solid #dfdfdf;
+    gap: 10px;*/
     margin-top: 30px;
-    align-items: flex-start;
     padding: 20px
+}
+
+.productoDetalle h3{
+    color:#D10024;
+    text-align: center;
+}
+
+.carrito{
+    display: flex;
+    border-top: 2px solid #dfdfdf;
+    flex-direction: row;
+    justify-content: space-around;
+
+    opacity: 0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.carrito:hover{
+opacity: 1;
+color: #D10024;
 }
 
 .productoDetalle p{
@@ -198,7 +268,7 @@ color: #777;
 .Suscribirse form input{
     width: 70%;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 50px 0 0 50px;
     border: none;
     background-color: white;
     font-size: 20px;
@@ -214,7 +284,7 @@ color: #777;
     border: none;
     cursor: pointer;
     background-color: #D10024;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 50px 50px 0px;
     padding-right: -6px;
 }
 /********************************************************
@@ -344,6 +414,10 @@ footer{
     font-family: 'Ubuntu', sans-serif;
     color: #dfdfdf;
 }
+footer p{
+    margin-top: 0;
+    margin-bottom:0;
+}
 
 /***********************************************************
 MEDIAS QUERYS
@@ -370,7 +444,7 @@ MEDIAS QUERYS
         padding: 0 8%;
     }
     
-    .card{
+    .card__css-manual{
         width: 100%;
     }
 
@@ -421,24 +495,24 @@ MEDIAS QUERYS
         justify-items:flex-start;
         border-top: 3px solid #d6d4d4;
         gap: 3%;
-        margin: -10% 0;
+     /*   margin: -10% 0;   */
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
     
-    .card{
+    .card__css-manual{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 430px;
+      /*  height: 430px; */
         border: 0.10px solid #dfdfdf;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         background-color: #ffffff;
     }
         
-    .card img{
+    .card__css-manual img{
         width: 100%;
         height: 250px;
         object-fit: scale-down;
@@ -496,17 +570,17 @@ MEDIAS QUERYS
         justify-items:flex-start;
         border-top: 3px solid #d6d4d4;
         gap: 3%;
-        margin: -5% 0;
+      /*  margin: -5% 0;        */
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
     
-    .card{
+    .card__css-manual{
         width: 100%;
         }
         
-    .card img{
+    .card__css-manual img{
         width: 100%;
         height: 250px;
         object-fit: scale-down;
@@ -549,11 +623,11 @@ MEDIAS QUERYS
         background-color: rgb(236, 236, 236);
     }
     
-    .card{
+    .card__css-manual{
         width: 235px;
     }
         
-    .card img{
+    .card__css-manual img{
         width: 100%;
     }
 
@@ -587,11 +661,11 @@ MEDIAS QUERYS
         background-color: rgb(236, 236, 236);
     }
     
-    .card{
+    .card__css-manual{
         width: 230px;
         }
         
-    .card img{
+    .card__css-manual img{
         width: 100%;
     }
 }
@@ -615,11 +689,11 @@ MEDIAS QUERYS
         background-color: rgb(236, 236, 236);
     }
     
-    .card{
+    .card__css-manual{
         width: 250px;
         }
         
-    .card img{
+    .card__css-manual img{
         width: 100%;
     }
 
@@ -629,8 +703,4 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:1401px){
-
-    footer{
-        font-size: 20px;
-    }
 }
