@@ -15,7 +15,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>Web Developer</title>
-    <link rel="stylesheet" href="css/indexModulosSeparados.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/2706ae0715.js" crossorigin="anonymous"></script>
@@ -37,10 +37,14 @@
             </div>
             <ul
                 class=" d-flex justify-content-evenly justify-content-sm-evenly justify-content-md-evenly justify-content-lg-evenly container col-12 col-lg-3 col-md-12 redes__Sociales">
-                <li><i class="fab fa-facebook-f facebook"></i></li>
-                <li><i class="fab fa-twitter twitter"></i></li>
-                <li><i class="fab fa-youtube youtube"></i></li>
-                <li><i class="fab fa-instagram instagram"></i></li>
+                <li><a href="https://www.facebook.com" title="Facebook" target="_blank" rel=""><i
+                            class="fab fa-facebook-f facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" title="Twitter" target="_blank" rel=""><i
+                            class="fab fa-twitter twitter"></i></a></li>
+                <li><a href="https://www.youtube.com" title="Youtube" target="_blank" rel=""><i
+                            class="fab fa-youtube youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" title="Instagram" target="_blank" rel=""><i
+                            class="fab fa-instagram instagram"></i></a></li>
             </ul>
         </div>
     </div>
@@ -258,7 +262,7 @@
         <h2>Suscríbete para recibir los mejores precios</h2>
         <form action="#" class="">
             <input type="text" placeholder="Ingresa Tu Correo" class="">
-            <button class="boton"><i class="fas fa-envelope">Suscribirse</i></button>
+            <button class="boton"><i class="fas fa-envelope"></i>Suscribirse</button>
         </form>
     </section>
     <!--------------------------------------------------------- SUSCRIBIRSE------------------------------------------------------------------------------>
@@ -274,32 +278,55 @@
 
     <!--------------------------------------------------------- FOOTER------------------------------------------------------------------------------->
 
-    <footer>
-        <div class="footer__SobreNosotros">
-            <div>
-                <h4>Sobre Nosotros</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <p>localidad</p>
-                <p>telefono</p>
-                <p>email</p>
-            </div>
-        </div>
-        <div class="footer__Informacion">
-            <h4>INFORMACION</h4>
-            <p>Contactanos</p>
-            <p>Politica Privacidad</p>
-            <p>Reenvolsos</p>
-            <p>Terminos de Condiciones</p>
-        </div>
-        <div class="footer__Servicio">
-            <h4>Mi Cuenta</h4>
-            <p>Carrito Compras</p>
-            <p>Lista de deseos</p>
-            <p>Ayuda</p>
+    <footer class="bg__footer">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                    <div>
+                        <h4>Sobre Nosotros</h4>
+                        <p>Lorem ipsum dolor sit</p>
+                        <p>localidad</p>
+                        <p>telefono</p>
+                        <p>email</p>
+                    </div>
+                </div>
+                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                    <h4>INFORMACION</h4>
+                    <p>Contactanos</p>
+                    <p>Politica Privacidad</p>
+                    <p>Reenvolsos</p>
+                    <p>Terminos de Condiciones</p>
+                </div>
+                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                    <h4>Mi Cuenta</h4>
+                    <p>Carrito Compras</p>
+                    <p>Lista de deseos</p>
+                    <p>Ayuda</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 formContacto">
+                    <h4>CONTACTANOS</h4>  
+                    <form role="form">
+                        <div>
+                          <input type="text" id="" name="nombreContactenos" class="form-control mb-2" placeholder="Ingrese su nombre" required=""> 
+                        </div>
+                        <div>
+                           <input type="email" id="" name="emailContactenos" class="form-control" placeholder="Ingrese su correo electrónico" required="">  
+                            </div>
+                        <div>               
+                           <textarea id="" name="mensajeContactenos" class="form-control textarea__Maxsize" placeholder="Escriba su mensaje" rows="5"  required=""></textarea>
+                            </div>
+                           <div>            
+                           <input type="submit" value="Enviar" class="btn btn-default backColor pull-right" id="enviar">         
+                        </div>
+                    </form>
+                </div>
+        <div class="col-sm-12 text-center">
+            <p>Copyright ©2022 Todos los derechos reservados | Este desarrollo fue hecho con &#10084 by Web
+                Developer!</p>
         </div>
     </footer>
 
-<!--------------------------------------------------------- BOTON SUBIR------------------------------------------------------------------------------->
+    <!--------------------------------------------------------- BOTON SUBIR------------------------------------------------------------------------------->
 
 </body>
 

@@ -15,34 +15,55 @@ body{
     padding: 0px 11%;
     color: #fbfbfb;
 }
-
+a{
+    color: white;
+}
 .redes__Sociales{
     font-size: 20px;
+    cursor: pointer;
+    padding-right: 24px;
 }
 
-.facebook:hover{
-    cursor: pointer;
+.facebook{
+    
     color:#6894f1;
     transform: scale(1.15);
 }
 
-.twitter:hover{
-    cursor: pointer;
+.twitter{
     color: #00acee;
     transform: scale(1.15);
 }
 
-.youtube:hover{
-    cursor: pointer;
+.youtube{
     color: #c4302b;
     transform: scale(1.15);
 }
+
+.instagram {
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
 
 .container__manual {
     background-color: #1a1717;
     padding: 0px 11%;
     color: #fbfbfb;
     border-bottom: 3px solid #D10024;
+}
+
+.container__manualTopHeader{
+    border-bottom:none;
 }
 
 .img__logo{
@@ -100,6 +121,7 @@ ul{
     display: inline-block;
     font-size: 13px;
     padding: 0;
+    cursor: pointer;
   }
   
   .sidebar-social-casero i {
@@ -143,7 +165,7 @@ ul{
     position: absolute;
     top: 0;
     left: 55%;
-    background: red;
+    background: #fa3a5b;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -467,21 +489,13 @@ html {
                     footer 
 *********************************************************/
 
-footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-   background-image: url("../img/headerBackground.PNG");
-   margin-top: 10%;
-    padding: 20px 10%;
-    font-family: 'Ubuntu', sans-serif;
+.bg__footer{
+    background: #1a1717;
     color: #dfdfdf;
 }
-footer p{
-    margin-top: 0;
-    margin-bottom:0;
+
+.textarea__Maxsize{
+    max-height: 55px;
 }
 
 /***********************************************************
@@ -531,11 +545,6 @@ MEDIAS QUERYS
     .contact_form {
         margin-top: 70%;
         border-top: 3px solid #d6d4d4;
-    }
-
-    footer {
-        margin-top: 20%;
-        padding: 20px 2%;
     }
 }
 
@@ -590,18 +599,6 @@ MEDIAS QUERYS
         border-top: 3px solid #d6d4d4;
     }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background-image: url("../img/headerBackground.PNG");
-        margin-top: 20%;
-        padding: 20px 2%;
-        font-family: 'Ubuntu', sans-serif;
-        color: #dfdfdf;
-    }
 }
 
 @media screen and (min-width:601px) and (max-width:768px){
@@ -640,11 +637,6 @@ MEDIAS QUERYS
         margin-top: 33%;
         border-top: 3px solid #d6d4d4;
     }
-
-    footer {
-        margin-top: 20%;
-        padding: 20px 2%;
-    }
 }
 
 @media screen and (min-width:769px) and (max-width: 1024px){
@@ -676,12 +668,6 @@ MEDIAS QUERYS
     .Suscribirse {
         margin-top: 40%;
     }
-
-    footer {
-        margin-top: 10%;
-        padding: 20px 5%;
-    }
-
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px){
@@ -729,9 +715,5 @@ MEDIAS QUERYS
         
     .card__css-manual img{
         width: 100%;
-    }
-
-    footer{
-        font-size: 15px;
     }
 }
