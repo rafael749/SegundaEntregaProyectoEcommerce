@@ -52,7 +52,7 @@ body{
     width: 100%;
     border-radius: 50px 0px 0px 50px;
     padding-left: 20px;
-    border-color: #D10024;
+    border: 1px solid #D10024;
 }
 
 .Suscribirse form input, .form__buscar:focus{
@@ -97,7 +97,6 @@ ul{
 .sidebar-social-casero li {
     text-align: center;
     width: 31.9%;
-    margin-bottom: 3px !important;
     display: inline-block;
     font-size: 13px;
     padding: 0;
@@ -185,6 +184,7 @@ ul{
 .grillaPadre{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  /*  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr)); */
     grid-template-areas:
     "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
     "producto1 producto2 producto3 producto4"
@@ -213,8 +213,8 @@ ul{
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 300px;
-/*max-height: 430px;  TODO: Revisar donde toma el height paralelo*/
+width: 100%;
+height: 100%;
 border: 0.10px solid #dfdfdf;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 background-color: #ffffff;
@@ -231,14 +231,16 @@ background-color: #ffffff;
     object-fit: scale-down;
 }
 
-.productoDetalle , .carrito{
+.productoDetalle{
     display: flex;
     flex-direction: column;
     align-items: center;
    /* border-top: 2px solid #dfdfdf;
     gap: 10px;*/
-    margin-top: 30px;
-    padding: 20px
+    margin-top: 3%;
+    padding: 2%;
+    overflow: hidden;
+    max-height: 100px;
 }
 
 .productoDetalle h3{
@@ -251,7 +253,11 @@ background-color: #ffffff;
     border-top: 2px solid #dfdfdf;
     flex-direction: row;
     justify-content: space-around;
-
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 50px;
+    padding: 0%;
     opacity: 0.5;
     transition: opacity .5s ease-out;
     -moz-transition: opacity .5s ease-out;
@@ -478,9 +484,6 @@ footer p{
     margin-bottom:0;
 }
 
-/****************************************************************************************************************************************/
-/****************************************************************************************************************************************/
-
 /***********************************************************
 MEDIAS QUERYS
 ************************************************************/
@@ -504,10 +507,6 @@ MEDIAS QUERYS
         gap: 1%;
         margin: 10% 0;
         padding: 0 8%;
-    }
-    
-    .card__css-manual{
-        width: 100%;
     }
 
     .Suscribirse {
@@ -561,17 +560,6 @@ MEDIAS QUERYS
         padding: 0 8%;
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
-    }
-    
-    .card__css-manual{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-      /*  height: 430px; */
-        border: 0.10px solid #dfdfdf;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        background-color: #ffffff;
     }
         
     .card__css-manual img{
@@ -637,10 +625,6 @@ MEDIAS QUERYS
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
-    
-    .card__css-manual{
-        width: 100%;
-        }
         
     .card__css-manual img{
         width: 100%;
@@ -684,10 +668,6 @@ MEDIAS QUERYS
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
-    
-    .card__css-manual{
-        width: 235px;
-    }
         
     .card__css-manual img{
         width: 100%;
@@ -722,10 +702,6 @@ MEDIAS QUERYS
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
-    
-    .card__css-manual{
-        width: 230px;
-        }
         
     .card__css-manual img{
         width: 100%;
@@ -750,10 +726,6 @@ MEDIAS QUERYS
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(236, 236, 236);
     }
-    
-    .card__css-manual{
-        width: 250px;
-        }
         
     .card__css-manual img{
         width: 100%;
