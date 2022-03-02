@@ -232,6 +232,7 @@ ul{
 }
 
 .card__css-manual{
+position: relative;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -240,6 +241,20 @@ height: 100%;
 border: 0.10px solid #dfdfdf;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 background-color: #ffffff;
+}
+
+#cart_menu_Nuevo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2%;
+    left: 73%;
+    background: #D10024;
+    width: 60px;
+    height: 30px;
+    color: white;
+    padding: 2px;
 }
 
 .card__css-manual:hover{
@@ -280,6 +295,10 @@ background-color: #ffffff;
     margin-top: 5%;
     height: 50px;
     padding: 0%;
+ 
+}
+
+.heart , .eye , .shopping-car{
     opacity: 0.5;
     transition: opacity .5s ease-out;
     -moz-transition: opacity .5s ease-out;
@@ -287,7 +306,7 @@ background-color: #ffffff;
     -o-transition: opacity .5s ease-out;
 }
 
-.carrito:hover{
+.heart:hover , .eye:hover , .shopping-car:hover{
 opacity: 1;
 color: #D10024;
 }
@@ -497,7 +516,14 @@ html {
 .textarea__Maxsize{
     max-height: 55px;
 }
-
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
 /***********************************************************
 MEDIAS QUERYS
 ************************************************************/
