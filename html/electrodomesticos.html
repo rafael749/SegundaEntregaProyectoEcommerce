@@ -1,184 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web Developer</title>
-        <!--Google Apis-->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-        <!--boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <title>Ecommerce</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="https://kit.fontawesome.com/2706ae0715.js" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Apis-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2706ae0715.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
-    <header>
-        <section class="topHeader">
-            <ul class="topHeader__izq">
-                <li><i class="fas fa-envelope faq-izq">Info@Webdev.com</i></li>
+
+    <div class="container__manualTopHeader">
+        <div class="row justify-content-start">
+            <div
+                class="d-flex  justify-content-center justify-content-lg-start col-12 col-lg-9 col-md-12 col-sm-12 m-0 p-1">
+                <form class="d-flex justify-content-center justify-content-lg-start col-sm-12">
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope faq-izq"></i><span class="faq-izq-contacto"> Info@DesarrolloWebcom</span>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <ul
+                class=" d-flex justify-content-evenly justify-content-sm-evenly justify-content-md-evenly justify-content-lg-evenly container col-12 col-lg-3 col-md-12 redes__Sociales">
+                <li><a href="https://www.facebook.com" title="Facebook" target="_blank" rel=""><i
+                            class="fab fa-facebook-f facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" title="Twitter" target="_blank" rel=""><i
+                            class="fab fa-twitter twitter"></i></a></li>
+                <li><a href="https://www.youtube.com" title="Youtube" target="_blank" rel=""><i
+                            class="fab fa-youtube youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" title="Instagram" target="_blank" rel=""><i
+                            class="fab fa-instagram instagram"></i></a></li>
             </ul>
-            <ul class="topHeader__der">
-                <li class="fa__user"><i class="fab fa-facebook-f facebook"></i></li>
-                <li class="fa__user"><i class="fab fa-twitter twitter"></i></li>
-                <li class="fa__user"><i class="fab fa-youtube youtube"></i></li>
-                <li class="fa__user"><i class="fab fa-instagram instagram" id="insta"></i></li>
-            </ul>
-        </section>
-        <section class="header">
-            <div class="header__logo">
-                <img src="../img/logo.PNG" alt="logo" class="logoDesktop">
-                <img src="../img/logoSmall.PNG" alt="logo SmartPhone" class="logoSmartPhone">
-            </div>
-            <div class="header__buscar">
-                <input type="text" placeholder="Buscar Productos" autocomplete="off">
-                <button class="header__buscarLogo"><i class="fas fa-search"></i></button>              
-            </div>
-            <div class="header__compras">
-                <ul class="header__ul">
-                    <li><i class="fa fa-user"> Iniciar Sesion</i></li>
-                    <i class="fas fa-heart"></i>
-                    <li><i class="fas fa-shopping-cart"> 2</i></li>
-                </ul>
-            </div>
-        </section>
-    </header>
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">MI LOGO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
-                  <a class="nav-link" aria-current="page" href="ofertas.html">OFERTAS</a>
-                  <a class="nav-link" aria-current="page" href="tecnologias.html">TECNOLOGIA</a>
-                  <a class="nav-link active" aria-current="page" href="electrodomesticos.html">ELECTRODOMESTICOS</a>
-                  <a class="nav-link" aria-current="page" href="accesorios.html">ACCESORIOS</a>
-                  <a class="nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled=""></a>
+        </div>
+    </div>
+    <section class="container__manual background">
+        <div class="row justify-content-start">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div
+                    class="d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-start col-12 col-lg-3 col-md-3 col-sm-4">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo.PNG" alt="logo" width=""
+                            class="img__logo"></a>
                 </div>
-              </div>
-            </div>
-          </nav>
+                <div
+                    class="d-flex  justify-content-end justify-content-sm-end justify-content-md-end justify-content-lg-center col-12 col-lg-6 col-md-9 col-sm-8">
+                    <form class="formulario__Padre d-flex">
+                        <input class="form__buscar" type="search" placeholder="Buscar Producto.." aria-label="Search">
+                        <!--  <button class="btn btn-outline-success btn__buscar" type="submit">Search</button>-->
+                        <button class="btn__buscar"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul
+                    class=" sidebar-social-casero form__login justify-content-around justify-content-sm-around justify-content-lg-evenly justify-content-md-around  container col-12 col-lg-3 col-md-12">
+                    <li><i class="fa fa-user"></i><span> Ingresar</span></li>
+                    <li class="cart">
+                        <i class="fas fa-heart"></i><span> Deseos</span>
+                        <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">8</span>
+                    </li>
+                    <li class="cart">
+                        <i class="fas fa-shopping-cart"></i><span> Carrito</span>
+                        <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">5</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
+
+    <!-------------------------------------------------------------MENU------------------------------------------------------------------------------------->
+
+    <section class="container p-0">
+        <nav class="navbar navbar-expand-lg navbar-light nav__bar">
+            <!--bg-light-->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ul__li">
+                        <a class="nav-link nav__link" aria-current="page" href="../index.html">HOME</a>
+                        <a class="nav-link nav__link" aria-current="page" href="ofertas.html">OFERTAS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="tecnologias.html">TECNOLOGIA</a>
+                        <a class="nav-link nav__link activo" aria-current="page" href="electrodomesticos.html">ELECTRODOMESTICOS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="accesorios.html">ACCESORIOS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-------------------------------------------------------------FIN MENU------------------------------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------------INICIO SLIDER-------------------------------------------------------------------------------->
+
+    <!---------------------------------------------------------FIN SLIDER----------------------------------------------------------------------------------->
+
+    <!---------------------------------------------------------INICIO GRID----------------------------------------------------------------------------------->
+
     <main>
         <div class="grillaPadre">
-            <h2 class="h2__titulo1">Electrodomesticos</h2>
-            <div class="producto1 productos card">
-                <img src="../img/cocina.png" alt="cocina">
+            <h2 class="h2__titulo1"><a href="#" class="h2__verMas">Ofertas</a></h2>
+            <div class="producto1 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/auriculares.jpg" alt="Auriculares AirPods">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$31.999</h3>
+                    <h5>Apple AirPods Pro</h5>
+                    <h6>MODELO: MME73AM/A</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto2 productos card">
-                <img src="../img/sandwichera.jpg" alt="sandwichera">
+            <div class="producto2 productos card__css-manual">
+                <img src="../img/auriculares2.jpg" alt="Auriculares Beats">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$33.857</h3>
+                    <h4>Auriculares Beats</h4>
+                    <h6>Solo³ Wireless - Rose gold</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto3 productos card">
-                <img src="../img/lavarropa automatico.png" alt="lavarropa">
+            <div class="producto3 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/cargador iphone.jpg" alt="Pulsera Silicona">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$480</h3>
+                    <h5>Maya Silicona Pulsera</h5>
+                    <h6>Sony Smart Band 1,2,3,4</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto4 productos card">
-                <img src="../img/batidora.jpg" alt="">
+            <div class="producto4 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <h2 class="h2__titulo2">Productos Similares</h2>
-            <div class="producto5 productos card">
-                <img src="../img/freidora.jpg" alt="freidora">
+            <div class="producto5 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto6 productos card">
-                <img src="../img/silla2.jpg" alt="silla2">
+            <div class="producto6 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto7 productos card">
-                <img src="../img/smartv.png" alt="smartv">
+            <div class="producto7 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-            <div class="producto8 productos card">
-                <img src="../img/cargador iphone.jpg" alt="cargador ihpone">
+            <div class="producto8 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
-                    <p>$999</p>
-                    <h3>Nombre Producto</h3>
-                    <h4>Detalle producto</h4>
-                    <h4>Detalle producto</h4>
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
-        </div>
+            <div class="producto9 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
+                <div class="productoDetalle">
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
+                </div>
+            </div>
+            <div class="producto10 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
+                <div class="productoDetalle">
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
+                </div>
+            </div>
+            <div class="producto11 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
+                <div class="productoDetalle">
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
+                </div>
+            </div>
+            <div class="producto12 productos card__css-manual">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="../img/batidora.jpg" alt="Batidora Peabody">
+                <div class="productoDetalle">
+                    <h3>$59.000</h3>
+                    <h5>Batidora Peabody</h5>
+                    <h6>Planetaria Bm190 6,7 Lts</h6>
+                </div>
+                <div class="carrito">
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
+                </div>
+            </div>
     </main>
+    <!---------------------------------------------------------FIN GRID----------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------- SUSCRIBIRSE---- -------------------------------------------------------------------------->
     <section class="Suscribirse">
         <h2>Suscríbete para recibir los mejores precios</h2>
         <form action="#" class="">
             <input type="text" placeholder="Ingresa Tu Correo" class="">
-            <button class="boton"><i class="fas fa-envelope">Suscribirse</i></button>
+            <button class="boton"><i class="fas fa-envelope"></i>Suscribirse</button>
         </form>
     </section>
+    <!--------------------------------------------------------- SUSCRIBIRSE------------------------------------------------------------------------------>
 
+
+
+    <!--------------------------------------------------------- BOTON SUBIR------------------------------------------------------------------------------->
     <div class="Btn__Flotante">
         <a class="Btn__FlotanteAnchor btn__FlotanteV2 a" href="#top"><img src="../img/flecha.png" alt="subir"></a>
     </div>
-    <footer>
-        <div class="footer__SobreNosotros">
-            <div>
-                <h3>Sobre Nosotros</h3>
-                <p>Lorem ipsum dolor sit</p>
-                <p>localidad</p>
-                <p>telefono</p>
-                <p>email</p>
-            </div>
-        </div>
-        <div class="footer__Informacion">
-            <h3>INFORMACION</h3>
-            <p>Contactanos</p>
-            <p>Politica Privacidad</p>
-            <p>Reenvolsos</p>
-            <p>Terminos de Condiciones</p>
-        </div>
-        <div class="footer__Servicio">
-            <h3>Mi Cuenta</h3>
-            <p>Carrito Compras</p>
-            <p>Lista de deseos</p>
-            <p>Ayuda</p>
-        </div>
+    <!--------------------------------------------------------- FIN BOTON SUBIR--------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------- FOOTER------------------------------------------------------------------------------->
+
+    <footer class="bg__footer">
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                    <div>
+                        <h4>Sobre Nosotros</h4>
+                        <p>Lorem ipsum dolor sit</p>
+                        <p>localidad</p>
+                        <p>telefono</p>
+                        <p>email</p>
+                    </div>
+                </div>
+                <div class="container-fluid  col-sm-6 col-md-3 col-lg-3">
+                    <h4>INFORMACION</h4>
+                    <p>Contactanos</p>
+                    <p>Politica Privacidad</p>
+                    <p>Reenvolsos</p>
+                    <p>Terminos de Condiciones</p>
+                </div>
+                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                    <h4>Mi Cuenta</h4>
+                    <p>Carrito Compras</p>
+                    <p>Lista de deseos</p>
+                    <p>Ayuda</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 formContacto">
+                    <h4>CONTACTANOS</h4>
+                    <form role="form">
+                        <div>
+                            <input type="text" id="" name="nombreContactenos" class="form-control mb-2"
+                                placeholder="Ingresar Nombre" required="">
+                        </div>
+                        <div>
+                            <input type="email" id="" name="emailContactenos" class="form-control mb-2"
+                                placeholder="Ingresar Email" required="">
+                        </div>
+                        <div>
+                            <textarea id="" name="mensajeContactenos" class="form-control textarea__Maxsize"
+                                placeholder="Escribir mensaje" rows="5" required=""></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" class="btn btn-default backColor pull-right"
+                                id="enviar">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <p>Copyright ©2022 Todos los derechos reservados | Este desarrollo fue hecho con &#10084 by Web
+                        Developer!</p>
+                </div>
     </footer>
+
+    <!--------------------------------------------------------- BOTON SUBIR------------------------------------------------------------------------------->
+
 </body>
+
 </html>

@@ -18,6 +18,17 @@ body{
 a{
     color: white;
 }
+
+.faq-izq{
+    cursor: pointer; 
+    color: #D10024;
+}
+.faq-izq-contacto:hover{
+    cursor:pointer;
+    color: #D10024;
+}
+
+
 .redes__Sociales{
     font-size: 20px;
     cursor: pointer;
@@ -186,7 +197,7 @@ ul{
 .navbar-light .navbar-nav .activo{
     color: #D10024;
     font-weight: 500;
-    background-size: 100% 2px;
+    background-size: 90% 2px;
 }
 .navbar-light .navbar-nav .activo:hover{
 color: #D10024;
@@ -203,7 +214,7 @@ color: #D10024;
 }
 
 .ul__li a:hover, .ul__li a:focus {
-    background-size: 100% 2px;
+    background-size: 90% 2px;
     color: #D10024; 
 }
 
@@ -420,90 +431,6 @@ color: #777;
                 CONTACTO
 *********************************************************/
 
-.contact_form{  
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 5%;
-}
-
-  form p input{
-    background-color: #fbfbfb; 
-    width: 100%; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border: 1px solid rgb(167 167 167);
-    margin-top: 15px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-}
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 100%; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border: 1px solid rgb(167 167 167);
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-}
-
-  .obligatorio{
-    color: #D10024; 
-}
-  
-  .aviso{
-    font-size: 15px;  
-    color: #0e0e0e;  
-}
-  
-  .formulario__h1{
-    font-size: 39px;  
-    padding-bottom: 20px; 
-    color: #1E1F29;
-}
-  
-  .formulario__h3{
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: #0e0e0e;   
-}
-  
-  .formulario__p{
-    font-size: 14px; 
-    color: #0e0e0e; 
-}
-  
-  .formulario .formulario__input:focus{
-    outline:0;
-    border: 1px solid #dfdfdf;
-}
-  
-  .formulario .formulario__textarea:focus{
-    outline:0;
-    border: 1px solid #D10024;
-}
-
-form button{
-    width: 30%;
-    font-size: 25px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    background-color: #D10024;
-    border-radius: 6px;
-    height: 40px;
-}
-
 /********************************************************
                 BOTON SUBIR
 /********************************************************/
@@ -550,6 +477,17 @@ html {
     justify-items: center;
     align-items: center;
 }
+
+.formContacto__Contacto{
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.formContacto__Contacto .textarea__Maxsize{
+    max-height: 200px;
+}
 /***********************************************************
 MEDIAS QUERYS
 ************************************************************/
@@ -594,9 +532,8 @@ MEDIAS QUERYS
         font-size: 20px;
     }
 
-    .contact_form {
-        margin-top: 70%;
-        border-top: 3px solid #d6d4d4;
+    .formContacto__Contacto{
+    width: 300px;
     }
 }
 
