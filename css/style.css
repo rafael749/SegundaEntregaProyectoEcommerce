@@ -161,7 +161,7 @@ ul{
     position: relative;
   }
   
-  #cart_menu_num {
+  .cart_menu_num {
     position: absolute;
     top: 0;
     left: 55%;
@@ -183,12 +183,34 @@ ul{
 /************************************************************
                              N A V   
 /***********************************************************/
-/*
-.nav{                                   
-    border-top: 3px solid #D10024;
-    border-bottom: 2px solid #d6d4d4;
+.navbar-light .navbar-nav .activo{
+    color: #D10024;
+    font-weight: 500;
+    background-size: 100% 2px;
 }
-*/
+.navbar-light .navbar-nav .activo:hover{
+color: #D10024;
+}
+
+.ul__li a {
+    text-decoration: none;
+    color:#333;
+    background-image: linear-gradient(#D10024, #D10024);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;    
+}
+
+.ul__li a:hover, .ul__li a:focus {
+    background-size: 100% 2px;
+    color: #D10024; 
+}
+
+.nav__link{
+padding: 0px;
+}
+
 /********************************************************
                     ver mas 
 *********************************************************/
@@ -243,13 +265,13 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 background-color: #ffffff;
 }
 
-#cart_menu_Nuevo{
+.cart_menu_Nuevo{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 2%;
-    left: 73%;
+    top: 5%;
+    left: 70%;
     background: #D10024;
     width: 60px;
     height: 30px;
@@ -266,6 +288,7 @@ background-color: #ffffff;
     width: 100%;
     height: 250px;
     object-fit: scale-down;
+    padding-top: 10%;
 }
 
 .productoDetalle{
@@ -356,6 +379,7 @@ color: #777;
 .Suscribirse h2{
     font-family: ubuntu;
     color: #242424;
+    text-align: center;
 }
 
 .Suscribirse form{
@@ -509,12 +533,14 @@ html {
 *********************************************************/
 
 .bg__footer{
+    margin-top: 5%;
     background: #1a1717;
     color: #dfdfdf;
+    border-top: 3px solid #D10024;
 }
 
 .textarea__Maxsize{
-    max-height: 55px;
+    max-height: 70px;
 }
 .formContacto {
     display: flex;
