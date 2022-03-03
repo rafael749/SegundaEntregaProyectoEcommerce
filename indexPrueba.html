@@ -30,7 +30,8 @@
                 <form class="d-flex justify-content-center justify-content-lg-start col-sm-12">
                     <ul>
                         <li>
-                            <i class="fas fa-envelope faq-izq"></i>Info@DesarrolloWebcom
+                            <i class="fas fa-envelope faq-izq"></i><span class="faq-izq-contacto">
+                                Info@DesarrolloWebcom</span>
                         </li>
                     </ul>
                 </form>
@@ -53,7 +54,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div
                     class="d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-start col-12 col-lg-3 col-md-3 col-sm-4">
-                    <a class="navbar-brand" href="index.html"><img src="  img/logo.png" alt="logo" width=""
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.PNG" alt="logo" width=""
                             class="img__logo"></a>
                 </div>
                 <div
@@ -69,11 +70,11 @@
                     <li><i class="fa fa-user"></i><span> Ingresar</span></li>
                     <li class="cart">
                         <i class="fas fa-heart"></i><span> Deseos</span>
-                        <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">8</span>
+                        <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">8</span>
                     </li>
                     <li class="cart">
                         <i class="fas fa-shopping-cart"></i><span> Carrito</span>
-                        <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">5</span>
+                        <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">5</span>
                     </li>
                 </ul>
             </nav>
@@ -83,7 +84,7 @@
     <!-------------------------------------------------------------MENU------------------------------------------------------------------------------------->
 
     <section class="container p-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light nav__bar">
             <!--bg-light-->
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -92,13 +93,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
-                        <a class="nav-link" aria-current="page" href="html/ofertas.html">OFERTAS</a>
-                        <a class="nav-link" aria-current="page" href="html/tecnologias.html">TECNOLOGIA</a>
-                        <a class="nav-link" aria-current="page" href="html/electrodomesticos.html">ELECTRODOMESTICOS</a>
-                        <a class="nav-link" aria-current="page" href="html/accesorios.html">ACCESORIOS</a>
-                        <a class="nav-link" aria-current="page" href="html/contacto.html">CONTACTO</a>
+                    <div class="navbar-nav ul__li">
+                        <a class="nav-link nav__link activo " aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link nav__link" aria-current="page" href="html/ofertas.html">OFERTAS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="html/tecnologias.html">TECNOLOGIA</a>
+                        <a class="nav-link nav__link" aria-current="page"
+                            href="html/electrodomesticos.html">ELECTRODOMESTICOS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="html/accesorios.html">ACCESORIOS</a>
+                        <a class="nav-link nav__link" aria-current="page" href="html/contacto.html">CONTACTO</a>
                     </div>
                 </div>
             </div>
@@ -145,111 +147,118 @@
 
     <main>
         <div class="grillaPadre">
-            <h2 class="h2__titulo1">Los mas buscados <a href="html/tecnologias.html" class="h2__verMas">Ver
+            <h2 class="h2__titulo1">Productos Nuevos <a href="html/tecnologias.html" class="h2__verMas">Ver
                     mas</a></h2>
             <div class="producto1 productos card__css-manual">
-                <img src="img/auriculares.jpg" alt="">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="img/auriculares.jpg" alt="Auriculares AirPods">
                 <div class="productoDetalle">
                     <h3>$31.999</h3>
                     <h5>Apple AirPods Pro</h5>
                     <h6>MODELO: MME73AM/A</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto2 productos card__css-manual">
-                <img src="img/auriculares2.jpg" alt="">
+                <img src="img/auriculares2.jpg" alt="Auriculares Beats">
                 <div class="productoDetalle">
                     <h3>$33.857</h3>
                     <h4>Auriculares Beats</h4>
                     <h6>Solo³ Wireless - Rose gold</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto3 productos card__css-manual">
-                <img src="img/cargador iphone.jpg" alt="">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="img/cargador iphone.jpg" alt="Pulsera Silicona">
                 <div class="productoDetalle">
                     <h3>$480</h3>
                     <h5>Maya Silicona Pulsera</h5>
                     <h6>Sony Smart Band 1,2,3,4</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto4 productos card__css-manual">
-                <img src="img/batidora.jpg" alt="">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Nuevo</span>
+                <img src="img/batidora.jpg" alt="Batidora Peabody">
                 <div class="productoDetalle">
                     <h3>$59.000</h3>
                     <h5>Batidora Peabody</h5>
                     <h6>Planetaria Bm190 6,7 Lts</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <h2 class="h2__titulo2">Ofertas <a href="html/ofertas.html" class="h2__verMas">Ver todas</a></h2>
             <div class="producto5 productos card__css-manual">
-                <img src="img/silla.jpg" alt="">
+                <h6><span id="" data-action="cart-can" class="cart_menu_Nuevo badge bg-secondary">Sin Stock</span></h6>
+                <img src="img/silla.jpg" alt="Silla Escritorio Pro Gamer">
                 <div class="productoDetalle">
                     <h3>$46.999</h3>
                     <h5>Silla de Escritorio</h5>
                     <h6>Extremer Pro Gamer Eergonómica</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto6 productos card__css-manual">
-                <img src="img/silla2.jpg" alt="">
+                <h6><span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Desc 30%</span></h6>
+                <img src="img/silla2.jpg" alt="Silla Escritorio Gammer Leyend">
                 <div class="productoDetalle">
                     <h3>$42.999</h3>
                     <h5>Silla de Escritorio</h5>
                     <h6>Pro Leyend Gamer Eergonómica</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto7 productos card__css-manual">
-                <img src="img/smartv.png" alt="">
+                <h6><span id="" data-action="cart-can" class="cart_menu_Nuevo badge bg-secondary">Sin Stock</span></h6>
+                <img src="img/smartv.png" alt="Smart Tv">
                 <div class="productoDetalle">
                     <h3>$999</h3>
                     <h5>Smart TV TCL</h5>
                     <h6>S-Series LED Full HD 40"</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
             <div class="producto8 productos card__css-manual">
-                <img src="img/cargador iphone.jpg" alt="">
+                <span id="" data-action="cart-can" class="cart_menu_Nuevo badge rounded">Desc 45%</span>
+                <img src="img/cargador iphone.jpg" alt="Pulsera Silicona">
                 <div class="productoDetalle">
                     <h3>$480</h3>
                     <h5>Maya Silicona Pulsera</h5>
                     <h6>Sony Smart Band 3,4</h6>
                 </div>
                 <div class="carrito">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart heart"></i>
+                    <i class="fas fa-eye eye"></i>
+                    <i class="fas fa-shopping-cart shopping-car"></i>
                 </div>
             </div>
         </div>
@@ -279,9 +288,9 @@
     <!--------------------------------------------------------- FOOTER------------------------------------------------------------------------------->
 
     <footer class="bg__footer">
-        <div class="container mt-5">
+        <div class="container text-center mt-5">
             <div class="row">
-                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                <div class="container-fluid col-sm-12 col-md-6 col-lg-3">
                     <div>
                         <h4>Sobre Nosotros</h4>
                         <p>Lorem ipsum dolor sit</p>
@@ -290,40 +299,64 @@
                         <p>email</p>
                     </div>
                 </div>
-                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                <div class="container-fluid  col-sm-12 col-md-6 col-lg-3">
                     <h4>INFORMACION</h4>
                     <p>Contactanos</p>
                     <p>Politica Privacidad</p>
                     <p>Reenvolsos</p>
                     <p>Terminos de Condiciones</p>
                 </div>
-                <div class="container-fluid col-sm-6 col-md-3 col-lg-3">
+                <div class="container-fluid col-sm-12 col-md-6 col-lg-3">
                     <h4>Mi Cuenta</h4>
                     <p>Carrito Compras</p>
                     <p>Lista de deseos</p>
                     <p>Ayuda</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 formContacto">
-                    <h4>CONTACTANOS</h4>  
-                    <form role="form">
-                        <div>
-                          <input type="text" id="" name="nombreContactenos" class="form-control mb-2" placeholder="Ingrese su nombre" required=""> 
-                        </div>
-                        <div>
-                           <input type="email" id="" name="emailContactenos" class="form-control mb-2" placeholder="Ingrese su correo electrónico" required="">  
+                </div>               
+                    <div class="container-fluid col-sm-12 col-md-6 col-lg-3 pb-5">
+                                <form action="" method="post">
+                                    <div class="card border-secondary rounded-2">
+                                        <div class="card-header p-0">
+                                            <div class="bg-dark text-white text-center py-2">
+                                                <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                                <p class="m-0">Con gusto te ayudaremos</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <div class="form-group">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-user text-dark"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-envelope text-dark"></i></div>
+                                                    </div>
+                                                    <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                                </div>
+                                            </div>    
+                                            <div class="form-group">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-comment text-dark"></i></div>
+                                                    </div>
+                                                    <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <input type="submit" value="Enviar" class="btn btn-dark btn-block rounded-0 py-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        <div>               
-                           <textarea id="" name="mensajeContactenos" class="form-control textarea__Maxsize" placeholder="Escriba su mensaje" rows="5"  required=""></textarea>
-                            </div>
-                           <div>            
-                           <input type="submit" value="Enviar" class="btn btn-default backColor pull-right" id="enviar">         
-                        </div>
-                    </form>
+                <div class="col-sm-12 text-center">
+                    <p>Copyright ©2022 Todos los derechos reservados | Este desarrollo fue hecho con &#10084 by Web
+                        Developer!</p>
                 </div>
-        <div class="col-sm-12 text-center">
-            <p>Copyright ©2022 Todos los derechos reservados | Este desarrollo fue hecho con &#10084 by Web
-                Developer!</p>
-        </div>
     </footer>
 
     <!--------------------------------------------------------- BOTON SUBIR------------------------------------------------------------------------------->
