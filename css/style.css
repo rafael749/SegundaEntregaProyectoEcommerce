@@ -117,9 +117,9 @@ ul{
     top: 3px;
     padding-right: 20px;
 }
-.btn__buscar:hover, .boton:hover, .Contacto__button:hover{
-  /*  box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;*/
-    box-shadow: 0 0px 0px 0 #d21c1c inset, 0 0px 50px 0 #d00808;
+.btn__buscar:hover, .boton:hover{
+    box-shadow: 0 5px 50px 0 #ff5650 inset,0 5px 50px 0 #ff5d57;
+    
 }
 
 /****************************************************************************************
@@ -212,12 +212,6 @@ color: #D10024;
     background-size: 0% 2px;
     transition: background-size .4s;    
 }
-
-.ul__li a:hover, .ul__li a:focus {
-    background-size: 90% 2px;
-    color: #D10024; 
-}
-
 .nav__link{
 padding: 0px;
 }
@@ -274,6 +268,7 @@ height: 100%;
 border: 0.10px solid #dfdfdf;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 background-color: #ffffff;
+z-index: 20;
 }
 
 .cart_menu_Nuevo{
@@ -288,6 +283,22 @@ background-color: #ffffff;
     height: 30px;
     color: white;
     padding: 2px;
+    z-index: 20;
+}
+
+.cart_menu_Envio{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    right: 66%;
+    background: #59a501;
+    width: 70px;
+    height: 30px;
+    color: white;
+    padding: 2px;
+    z-index: 20;
 }
 
 .card__css-manual:hover{
@@ -300,6 +311,7 @@ background-color: #ffffff;
     height: 250px;
     object-fit: scale-down;
     padding-top: 10%;
+    z-index: 10;
 }
 
 .productoDetalle{
@@ -308,15 +320,22 @@ background-color: #ffffff;
     align-items: center;
    /* border-top: 2px solid #dfdfdf;
     gap: 10px;*/
-    margin-top: 3%;
+    margin-top: 6%;
     padding: 2%;
     overflow: hidden;
-    max-height: 100px;
+    max-height: 140px;
 }
 
 .productoDetalle h3{
     color:#D10024;
     text-align: center;
+}
+
+.precio__anterior{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #777;
+    z-index: 20;
 }
 
 .carrito{
@@ -492,7 +511,7 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 110%;
+        margin-top: 220%;
         font-size: 13px;
     }
     
@@ -541,7 +560,7 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 60%;
+        margin-top: 110%;
         font-size: 15px;
     }
     
@@ -587,7 +606,7 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 60%;
+        margin-top: 80%;
     }
 }
 
@@ -600,7 +619,6 @@ MEDIAS QUERYS
         "h2__titulo1 h2__titulo1 h2__titulo1"
         "producto1 producto2 producto3"
         "producto4 . ."
-        "h2__titulo2 h2__titulo2 h2__titulo2"
         "producto5 producto6 producto7"
         "producto8 . .";
         justify-content: space-evenly; 
@@ -644,6 +662,10 @@ MEDIAS QUERYS
     .card__css-manual img{
         width: 100%;
     }
+
+    .Suscribirse {
+        margin-top: 20%;
+    }
 }
 
 @media screen and (min-width:1201px) and (max-width : 1400px){
@@ -667,5 +689,23 @@ MEDIAS QUERYS
         
     .card__css-manual img{
         width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .card__css-manual img:hover{
+        transform: scale(1.15,1.15);
+        transition: all .4s ease-in-out;
+    }
+}    
+
+@media screen and (min-width:769px){
+    .ul__li a:hover, .ul__li a:focus {
+        background-size: 90% 2px;
+        color: #D10024; 
     }
 }
